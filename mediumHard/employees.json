@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Carlo Ortega",
+        "salary": 45000,
+        "department": "Tech"
+    },
+    {
+        "id": 2,
+        "name": "Luke Ted",
+        "salary": 55000,
+        "department": "Accounting"
+    },
+    {
+        "id": 3,
+        "name": "Fred George",
+        "salary": 75000,
+        "department": "Accounting"
+    },
+    {
+        "id": 4,
+        "name": "George Hill",
+        "salary": 550000,
+        "department": "Tech"
+    },
+    {
+        "id": 5,
+        "name": "Luke Barr",
+        "salary": 30000,
+        "department": "Marketing"
+    },
+    {
+        "id": 6,
+        "name": "John Doe",
+        "salary": 100000,
+        "department": "Marketing"
+    },
+    {
+        "id": 7,
+        "name": "Andrew Patt",
+        "salary": 55000,
+        "department": "Tech"
+    },
+    {
+        "id": 8,
+        "name": "Lucy Red",
+        "salary": 20000,
+        "department": "Human Resource"
+    },
+    {
+        "id": 9,
+        "name": "April May",
+        "salary": 115000,
+        "department": "Tech"
+    },
+    {
+        "id": 10,
+        "name": "Andrea Last",
+        "salary": 60000,
+        "department": "Human Resource"
+    }
+]
