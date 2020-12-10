@@ -14,20 +14,18 @@ app.get('/', (req, res) => {
 
 
 app.get('/employees/:id', (req, res) => {
-    if (!data) {
+
+    const findEmployee = data.find( (employee) => parseInt(req.params.id) === employee.id)
+
+    if (!findEmployee) {
         res.status(404).send('Could not find information.')
     }
-
-    const findEmployee = data.find(function (employee) {
-
-        return parseInt(req.params.id) === employee.id;
-    })
 
     res.send(findEmployee)
 
 })
 
-app.post('/employees', (req, res) => {
+app.post('/', (req, res) => {
     if (!req.body.name || !req.body.salary || !req.body.department) {
         res.status(400).send('Bad Request, please make sure you fill out all the fields.')
     }
@@ -69,6 +67,20 @@ app.put('/employees/:id', (req, res) => {
     // console.log(updateEmployee.department = req.body.department);
 
     res.send(updateEmployee)
+})
+
+app.delete('/employees/:id', (req, res) => {
+    const findEmployee = data.find((employee) => parseInt(req.params.id) === employee.id);
+    if (!findEmployee) {
+        res.status(404).send('No employee found, please make sure you used the right id number')
+    }
+
+    const index = data.indexOf(findEmployee);
+    
+    data.splice(index, 1);
+
+    res.send(findEmployee)
+    
 })
 
 
