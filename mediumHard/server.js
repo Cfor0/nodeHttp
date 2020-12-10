@@ -1,3 +1,9 @@
+//GET: / and /employees/:id
+//POST: /
+//PUT: /employees/:id
+//DELETE: /employees/:id
+
+
 const express = require('express');
 
 const app = express();
